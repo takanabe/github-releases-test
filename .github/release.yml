@@ -7,10 +7,10 @@ changelog:
     authors:
       - octocat
   categories:
-    - title: Breaking Changes :boom:
+    - title: Breaking Changes 💥
       labels:
         - breaking-change
-    - title: Bug Fix :construction:
+    - title: Bug Fix 🚧
       labels:
         - bug
     - title: Exciting New Features 🎉
