@@ -48,9 +48,11 @@ func main() {
 
 	title := fmt.Sprintf("Release %s", tag)
 
+	repositoryURL := "https://github.com/takanabe/github-releases-test"
+
 	// https://docs.github.com/en/repositories/releasing-projects-on-github/automation-for-release-forms-with-query-parameters
 	url, err := url.Parse(
-		fmt.Sprintf("https://github.com/takanabe/github-releases-test/releases/new?tag=%s&target=%s&title=%s&prerelease=%s", tag, target, title, preRelease),
+		fmt.Sprintf("%s/releases/new?tag=%s&target=%s&title=%s&prerelease=%s", repositoryURL, tag, target, title, preRelease),
 	)
 	if err != nil {
 		log.Fatal(err)
